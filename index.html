@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <title>Animales</title>
+</head>
+<body>
+    <center>
+        <h1>La app reconoce sonidos de:</h1>
+        <h2 class="Sin">Perro</h2>
+        <h2 class="Sin">Vaca</h2>
+        <h2 class="Sin">Gallo</h2>
+        <h2 class="Sin">Gato</h2>
+        <br>
+        <img src="Perro.png" alt="Perro" id="PerroIMG" class="img1">
+        <img src="Vaca.png" alt="Vaca" id="VacaIMG" class="img1">
+        <img src="Gallo.png" alt="Gallo" id="GalloIMG" class="img1">
+        <img src="Gato.png" alt="Gato" id="GatoIMG" class="img1">
+        <br>
+        <br>
+        <br>
+        <button id="Escuchar" onclick="Escuchar()" class="Boton">Escuchar</button>
+        <br>
+        <br>
+        <div class="D">
+            <h3>Animal:</h3>
+            <h3 id="Animal">Perro</h3>
+            <h3>Presicion:</h3>
+            <h3 id="Precision">87%</h3>
+        </div>
+        <button id="dfv" onclick="Prueba()">Prueba</button>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
